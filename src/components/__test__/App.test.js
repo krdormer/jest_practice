@@ -1,16 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // Not needed for Enzyme 
 import { shallow } from 'enzyme';
 import App from 'components/App';
 import CommentBox from 'components/CommentBox';
 import CommentList from 'components/CommentList';
-
-// Non Enzyme Code 
-it('successfully renders app', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div)
-}); //
 
 let wrapped;
 
